@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: "Comic Sans MS", cursive;
+        }
+        .container {
+            max-width: 600px;
+        }
+    </style>
+    <title>Formulario de Consulta de Estudiantes</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container mt-4">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo_cft_estatal.jpeg" alt="Descripción de la imagen" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Admisión</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Carrera
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           
+                     <a class="dropdown-item" href="#">Técnico de Nivel Superior en Informática y Aplicaciones Tecnológicas</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Proyectos Eléctricos de Distribución</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Fabricación y Montaje de Estructuras Metálicas</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Obras Civiles</a>
+                        <a class="dropdown-item" href="#">écnico en Mantenimiento Electromecánico con mención en Electromovilidad</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Enfermería Mención Gerontología</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Laboratorio Clínico, Banco de Sangre e Imagenología</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Veterinaria</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Estética mención Masoterapia</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Gestión Contable</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Gestión de Recursos Humanos</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Administración de Empresas</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Gestión de Comercio Exterior</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Control de Gestión y Logística</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Agrícola</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Administración Publica, mención Gestión Jurídica</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Educación Especial</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Trabajo Social</a>
+                        <a class="dropdown-item" href="#">Técnico de Nivel Superior en Educación Parvularia y Primer ciclo de  Educación Básica</a>
+
+                    </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-4">
+        <img src="./assets/img/portada.jpeg" alt="Descripción de la imagen" class="img-fluid">
+    </div>
+
+    <div class="container mt-4">
+
+        <h2>Formulario de Consulta de Estudiantes</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre del Estudiante:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese el nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+">
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido del Estudiante:</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese el apellido" required pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono del Estudiante:</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingrese el teléfono" required pattern="^[2-9]\d{8}$">
+            </div>
+            <div class="form-group">
+                <label for="carrera">Carrera por la cual desea consultar:</label>
+                <select class="form-control" id="carrera" name="carrera" required>
+                    <option value="">Seleccione una carrera</option>
+                    <option value="1">Técnico de Nivel Superior en Informática y Aplicaciones Tecnológicas</option>
+                    <option value="2">Técnico de Nivel Superior en Proyectos Eléctricos de Distribución</option>
+                    <option value="3">Técnico de Nivel Superior en Fabricación y Montaje de Estructuras Metálicas</option>
+                    <!-- Agrega las demás carreras aquí -->
+                    <option value="1">Técnico de Nivel Superior en Informática y Aplicaciones Tecnológicas</option>
+                        <option value="1">Técnico de Nivel Superior en Proyectos Eléctricos de Distribución</option>
+                            <option value="1">Técnico de Nivel Superior en Fabricación y Montaje de Estructuras Metálicas</option>
+                                <option value="1">Técnico de Nivel Superior en Obras Civiles</option>
+                                    <option value="1">écnico en Mantenimiento Electromecánico con mención en Electromovilidad</option>
+                                        <option value="1">Técnico de Nivel Superior en Enfermería Mención Gerontología</option>
+                                            <option value="1">Técnico de Nivel Superior en Laboratorio Clínico, Banco de Sangre e Imagenología</option>
+                                                <option value="1">Técnico de Nivel Superior en Veterinaria</option>
+                                                    <option value="1">Técnico de Nivel Superior en Estética mención Masoterapia</option>
+                                                        <option value="1">Técnico de Nivel Superior en Gestión Contable</option>
+                                                            <option value="1">Técnico de Nivel Superior en Gestión de Recursos Humanos</option>
+                                                                <option value="1">Técnico de Nivel Superior en Administración de Empresas</option>
+                                                                    <option value="1">Técnico de Nivel Superior en Gestión de Comercio Exterior</option>
+                                                                        <option value="1">Técnico de Nivel Superior en Control de Gestión y Logística</option>
+                                                                            <option value="1">Técnico de Nivel Superior en Agrícola</option>
+                                                                             <option value="1">Técnico de Nivel Superior en Administración Publica, mención Gestión Jurídica</option>
+                                                                                 <option value="1">Técnico de Nivel Superior en Trabajo Social</option>
+                                                                                     <option value="1"Técnico de Nivel Superior en Educación Parvularia y Primer ciclo de  Educación Básica</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad del Estudiante:</label>
+                <input type="number" class="form-control" id="edad" name="edad" placeholder="Ingrese la edad" required min="17" max="60">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje de Consulta:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Ingrese su consulta" required pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

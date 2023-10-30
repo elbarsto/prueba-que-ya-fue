@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: "Comic Sans MS", cursive;
+        }
+        .container {
+            max-width: 600px;
+        }
+    </style>
+    <title>Formulario de Consulta de Estudiantes</title>
+</head>
+<body>
+    <div class="container mt-4">
+       
+        <img src="/Users/usuario/Documents/CftArica/ArchivosHtml" alt="Descripción de la imagen" class="img-fluid">
+    </div>
+    <div class="container mt-4">
+        <h2>Formulario de Consulta de Estudiantes</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre del Estudiante:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese el nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+">
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido del Estudiante:</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese el apellido" required pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono del Estudiante:</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingrese el teléfono" required pattern="^[2-9]\d{8}$">
+            </div>
+            <div class="form-group">
+                <label for="carrera">Carrera por la cual desea consultar:</label>
+                <input type="text" class="form-control" id="carrera" name="carrera" placeholder="Ingrese la carrera" required pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+">
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad del Estudiante:</label>
+                <input type="number" class="form-control" id="edad" name="edad" placeholder="Ingrese la edad" required min="17" max="60">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje de Consulta:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Ingrese su consulta" required pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</body>
+</html>
